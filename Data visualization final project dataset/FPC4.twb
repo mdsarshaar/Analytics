@@ -1,0 +1,1466 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='springfield_health_dataset' inline='true' name='federated.1r83rjj187yo9p1ghzyku08l9w06' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='springfield_school_health_0_20' name='textscan.0liwd6611g4xsb1h05te11y8f16v'>
+            <connection class='textscan' directory='E:/GSU/Sem5/Data Visualisation/FPC' filename='springfield_school_health_0_20.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='springfield_school_health_0_20 (2)' name='textscan.0kybgf9021od9217ynbw21nqp177'>
+            <connection class='textscan' directory='E:/GSU/Sem5/Data Visualisation/FPC' filename='springfield_school_health_0_20.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0kybgf9021od9217ynbw21nqp177' name='springfield_school_health_0_20.csv' table='[springfield_school_health_0_20#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='person_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='race_ethnicity' ordinal='3' />
+            <column datatype='string' name='neighborhood' ordinal='4' />
+            <column datatype='integer' name='household_income' ordinal='5' />
+            <column datatype='boolean' name='uninsured' ordinal='6' />
+            <column datatype='real' name='bmi' ordinal='7' />
+            <column datatype='boolean' name='obese' ordinal='8' />
+            <column datatype='boolean' name='asthma' ordinal='9' />
+            <column datatype='boolean' name='diabetes' ordinal='10' />
+            <column datatype='boolean' name='vaccines_up_to_date' ordinal='11' />
+            <column datatype='boolean' name='covid_vaccinated' ordinal='12' />
+            <column datatype='real' name='school_attendance_rate' ordinal='13' />
+            <column datatype='integer' name='physical_activity_minutes_per_week' ordinal='14' />
+            <column datatype='real' name='school_meals_participation' ordinal='15' />
+            <column datatype='integer' name='counseling_sessions_per_year' ordinal='16' />
+            <column datatype='real' name='stress_level' ordinal='17' />
+            <column datatype='real' name='aqi_neighborhood' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0kybgf9021od9217ynbw21nqp177' name='springfield_school_health_0_20.csv' table='[springfield_school_health_0_20#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='person_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='race_ethnicity' ordinal='3' />
+            <column datatype='string' name='neighborhood' ordinal='4' />
+            <column datatype='integer' name='household_income' ordinal='5' />
+            <column datatype='boolean' name='uninsured' ordinal='6' />
+            <column datatype='real' name='bmi' ordinal='7' />
+            <column datatype='boolean' name='obese' ordinal='8' />
+            <column datatype='boolean' name='asthma' ordinal='9' />
+            <column datatype='boolean' name='diabetes' ordinal='10' />
+            <column datatype='boolean' name='vaccines_up_to_date' ordinal='11' />
+            <column datatype='boolean' name='covid_vaccinated' ordinal='12' />
+            <column datatype='real' name='school_attendance_rate' ordinal='13' />
+            <column datatype='integer' name='physical_activity_minutes_per_week' ordinal='14' />
+            <column datatype='real' name='school_meals_participation' ordinal='15' />
+            <column datatype='integer' name='counseling_sessions_per_year' ordinal='16' />
+            <column datatype='real' name='stress_level' ordinal='17' />
+            <column datatype='real' name='aqi_neighborhood' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>person_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[person_id]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>person_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race_ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race_ethnicity]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>race_ethnicity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighborhood]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>neighborhood</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>household_income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[household_income]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>household_income</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uninsured</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[uninsured]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>uninsured</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bmi]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>bmi</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>obese</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[obese]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>obese</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>asthma</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[asthma]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>asthma</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diabetes</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[diabetes]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>diabetes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccines_up_to_date</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[vaccines_up_to_date]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>vaccines_up_to_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>covid_vaccinated</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[covid_vaccinated]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>covid_vaccinated</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>school_attendance_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_attendance_rate]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>school_attendance_rate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>physical_activity_minutes_per_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[physical_activity_minutes_per_week]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>physical_activity_minutes_per_week</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>school_meals_participation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[school_meals_participation]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>school_meals_participation</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>counseling_sessions_per_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[counseling_sessions_per_year]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>counseling_sessions_per_year</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stress_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stress_level]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>stress_level</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aqi_neighborhood</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[aqi_neighborhood]</local-name>
+            <parent-name>[springfield_school_health_0_20.csv]</parent-name>
+            <remote-alias>aqi_neighborhood</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+      </column>
+      <column caption='Obesity' datatype='integer' name='[Calculation_825284632415428608]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF obese = TRUE THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Diabetic' datatype='integer' name='[Calculation_825284632427864067]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [diabetes] = TRUE THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Covid Vaccine' datatype='integer' name='[Calculation_825284632437047301]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [covid_vaccinated] = TRUE THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Asthamatic' datatype='integer' name='[Calculation_825284632440791046]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if [asthma]= TRUE then 1 else 0 END' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Diabetic (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Calculation_825284632427864067]' peg='0' size='0.303' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='springfield_school_health_0_20.csv' datatype='table' name='[__tableau_internal_object_id__].[springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Aqi Neighborhood' datatype='real' name='[aqi_neighborhood]' role='measure' type='quantitative' />
+      <column caption='Asthma' datatype='boolean' name='[asthma]' role='dimension' type='nominal' />
+      <column caption='Bmi' datatype='real' name='[bmi]' role='measure' type='quantitative' />
+      <column caption='Counseling Sessions Per Year' datatype='integer' name='[counseling_sessions_per_year]' role='dimension' type='quantitative' />
+      <column caption='Covid Vaccinated' datatype='boolean' name='[covid_vaccinated]' role='dimension' type='nominal' />
+      <column caption='Diabetes' datatype='boolean' name='[diabetes]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Household Income' datatype='integer' name='[household_income]' role='measure' type='quantitative' />
+      <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+      <column caption='Obese' datatype='boolean' name='[obese]' role='dimension' type='nominal' />
+      <column caption='Person Id' datatype='integer' name='[person_id]' role='dimension' type='ordinal' />
+      <column caption='Physical Activity Minutes Per Week' datatype='integer' name='[physical_activity_minutes_per_week]' role='dimension' type='quantitative' />
+      <column caption='Race Ethnicity' datatype='string' name='[race_ethnicity]' role='dimension' type='nominal' />
+      <column caption='School Attendance Rate' datatype='real' name='[school_attendance_rate]' role='measure' type='quantitative' />
+      <column caption='School Meals Participation' datatype='real' name='[school_meals_participation]' role='measure' type='quantitative' />
+      <column caption='Stress Level' datatype='real' name='[stress_level]' role='measure' type='quantitative' />
+      <column caption='Uninsured' datatype='boolean' name='[uninsured]' role='dimension' type='nominal' />
+      <column caption='Vaccines Up To Date' datatype='boolean' name='[vaccines_up_to_date]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_825284632427864067]' derivation='Count' name='[cnt:Calculation_825284632427864067:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_825284632415428608]' derivation='Sum' name='[sum:Calculation_825284632415428608:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_825284632427864067]' derivation='Sum' name='[sum:Calculation_825284632427864067:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_825284632440791046]' derivation='Sum' name='[sum:Calculation_825284632440791046:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[age]' derivation='Sum' name='[sum:age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aqi_neighborhood]' derivation='Sum' name='[sum:aqi_neighborhood:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[bmi]' derivation='Sum' name='[sum:bmi:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[cnt:diabetes:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632427986948:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632440791046:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:age:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[__tableau_internal_object_id__].[cnt:springfield_health_dataset.csv_357E02D0587248DF8F77971F5804AD40:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:aqi_neighborhood:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[cnt:obese:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:annual_income:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[cnt:Calculation_825284632427864067:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[cnt:hypertension:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632427864067:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:bmi:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='springfield_school_health_0_20.csv' id='springfield_school_health_0_20.csv_41E5591FBB9548D283E91E7ECC89BD62'>
+            <properties context=''>
+              <relation connection='textscan.0kybgf9021od9217ynbw21nqp177' name='springfield_school_health_0_20.csv' table='[springfield_school_health_0_20#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='person_id' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='string' name='gender' ordinal='2' />
+                  <column datatype='string' name='race_ethnicity' ordinal='3' />
+                  <column datatype='string' name='neighborhood' ordinal='4' />
+                  <column datatype='integer' name='household_income' ordinal='5' />
+                  <column datatype='boolean' name='uninsured' ordinal='6' />
+                  <column datatype='real' name='bmi' ordinal='7' />
+                  <column datatype='boolean' name='obese' ordinal='8' />
+                  <column datatype='boolean' name='asthma' ordinal='9' />
+                  <column datatype='boolean' name='diabetes' ordinal='10' />
+                  <column datatype='boolean' name='vaccines_up_to_date' ordinal='11' />
+                  <column datatype='boolean' name='covid_vaccinated' ordinal='12' />
+                  <column datatype='real' name='school_attendance_rate' ordinal='13' />
+                  <column datatype='integer' name='physical_activity_minutes_per_week' ordinal='14' />
+                  <column datatype='real' name='school_meals_participation' ordinal='15' />
+                  <column datatype='integer' name='counseling_sessions_per_year' ordinal='16' />
+                  <column datatype='real' name='stress_level' ordinal='17' />
+                  <column datatype='real' name='aqi_neighborhood' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Covid Vaccination Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='springfield_health_dataset' name='federated.1r83rjj187yo9p1ghzyku08l9w06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r83rjj187yo9p1ghzyku08l9w06'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+            </column>
+            <column caption='Covid Vaccine' datatype='integer' name='[Calculation_825284632437047301]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [covid_vaccinated] = TRUE THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Covid Vaccinated' datatype='boolean' name='[covid_vaccinated]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_825284632437047301]' derivation='Sum' name='[sum:Calculation_825284632437047301:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:Age (bin):ok]</rows>
+        <cols>[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632437047301:qk]</cols>
+      </table>
+      <simple-id uuid='{43CF4E36-4635-4918-AE00-361F2206E1E1}' />
+    </worksheet>
+    <worksheet name='Obesity Rate by Neighborhood'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Obesity Rate by Neighborhood</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='springfield_health_dataset' name='federated.1r83rjj187yo9p1ghzyku08l9w06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r83rjj187yo9p1ghzyku08l9w06'>
+            <column caption='Obesity' datatype='integer' name='[Calculation_825284632415428608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF obese = TRUE THEN 1 ELSE 0 END' />
+            </column>
+            <column-instance column='[Calculation_825284632415428608]' derivation='Avg' name='[avg:Calculation_825284632415428608:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighborhood]' derivation='None' name='[none:neighborhood:nk]' pivot='key' type='nominal' />
+            <column caption='Obese' datatype='boolean' name='[obese]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1r83rjj187yo9p1ghzyku08l9w06].[avg:Calculation_825284632415428608:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk]' value='74' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1r83rjj187yo9p1ghzyku08l9w06].[avg:Calculation_825284632415428608:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r83rjj187yo9p1ghzyku08l9w06].[avg:Calculation_825284632415428608:qk]</rows>
+        <cols>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk]</cols>
+      </table>
+      <simple-id uuid='{6EF19EEE-B815-4150-A767-5CB2F91171A9}' />
+    </worksheet>
+    <worksheet name='Obesity in age groups'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='springfield_health_dataset' name='federated.1r83rjj187yo9p1ghzyku08l9w06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r83rjj187yo9p1ghzyku08l9w06'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+            </column>
+            <column caption='Obesity' datatype='integer' name='[Calculation_825284632415428608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF obese = TRUE THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column caption='Obese' datatype='boolean' name='[obese]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_825284632415428608]' derivation='Sum' name='[sum:Calculation_825284632415428608:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-decoration'>
+            <format attr='vertical-align' value='bottom' />
+            <format attr='text-align' value='center' />
+            <format attr='wrap' value='on' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:gender:nk]' />
+              <text column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]</rows>
+        <cols>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1r83rjj187yo9p1ghzyku08l9w06].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{C5879828-0145-44CB-8697-ABEB05803785}' />
+    </worksheet>
+    <worksheet name='Rates of Preventable Diseases by Age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='springfield_health_dataset' name='federated.1r83rjj187yo9p1ghzyku08l9w06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r83rjj187yo9p1ghzyku08l9w06'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+            </column>
+            <column caption='Obesity' datatype='integer' name='[Calculation_825284632415428608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF obese = TRUE THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Diabetic' datatype='integer' name='[Calculation_825284632427864067]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [diabetes] = TRUE THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Asthamatic' datatype='integer' name='[Calculation_825284632440791046]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if [asthma]= TRUE then 1 else 0 END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Asthma' datatype='boolean' name='[asthma]' role='dimension' type='nominal' />
+            <column caption='Diabetes' datatype='boolean' name='[diabetes]' role='dimension' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Obese' datatype='boolean' name='[obese]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_825284632415428608]' derivation='Sum' name='[sum:Calculation_825284632415428608:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_825284632427864067]' derivation='Sum' name='[sum:Calculation_825284632427864067:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_825284632440791046]' derivation='Sum' name='[sum:Calculation_825284632440791046:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632440791046:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632427864067:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632427864067:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632440791046:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1r83rjj187yo9p1ghzyku08l9w06].[Multiple Values]</rows>
+        <cols>([federated.1r83rjj187yo9p1ghzyku08l9w06].[none:Age (bin):ok] / [federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{7F540AD2-DE60-4C12-B1E5-C74CBAD52D67}' />
+    </worksheet>
+    <worksheet name='Rates of Preventable Diseases by Neighborhood'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='springfield_health_dataset' name='federated.1r83rjj187yo9p1ghzyku08l9w06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r83rjj187yo9p1ghzyku08l9w06'>
+            <column caption='Obesity' datatype='integer' name='[Calculation_825284632415428608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF obese = TRUE THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Diabetic' datatype='integer' name='[Calculation_825284632427864067]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [diabetes] = TRUE THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Asthamatic' datatype='integer' name='[Calculation_825284632440791046]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if [asthma]= TRUE then 1 else 0 END' />
+            </column>
+            <column caption='Asthma' datatype='boolean' name='[asthma]' role='dimension' type='nominal' />
+            <column caption='Diabetes' datatype='boolean' name='[diabetes]' role='dimension' type='nominal' />
+            <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighborhood]' derivation='None' name='[none:neighborhood:nk]' pivot='key' type='nominal' />
+            <column caption='Obese' datatype='boolean' name='[obese]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_825284632415428608]' derivation='Sum' name='[sum:Calculation_825284632415428608:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_825284632427864067]' derivation='Sum' name='[sum:Calculation_825284632427864067:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_825284632440791046]' derivation='Sum' name='[sum:Calculation_825284632440791046:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632440791046:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632427864067:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632427864067:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632415428608:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1r83rjj187yo9p1ghzyku08l9w06].[sum:Calculation_825284632440791046:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1r83rjj187yo9p1ghzyku08l9w06].[Multiple Values]</rows>
+        <cols>([federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk] / [federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{DBBA870F-2AE9-47A1-BFC8-46E6967E77B1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Obesity in age groups'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:Age (bin):ok]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:gender:nk]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:obese:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{455B808E-2BF0-4A96-A4EA-D34D206B4C30}' />
+    </window>
+    <window class='worksheet' name='Obesity Rate by Neighborhood'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[avg:bmi:ok]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:obese:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{70C76A62-0EB3-47FE-9160-6C03794169FB}' />
+    </window>
+    <window class='worksheet' name='Rates of Preventable Diseases by Neighborhood'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:diabetes:nk]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:hypertension:nk]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:neighborhood:nk]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:obese:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D94B54F1-6E71-4C28-AD2C-B89346C8307A}' />
+    </window>
+    <window class='worksheet' name='Rates of Preventable Diseases by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[:Measure Names]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:Age (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BAD6DE43-FDAF-42D3-B296-E7F8F4F87740}' />
+    </window>
+    <window class='worksheet' name='Covid Vaccination Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:Age (bin):ok]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:covid_vaccinated:nk]</field>
+            <field>[federated.1r83rjj187yo9p1ghzyku08l9w06].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C69BAD14-F128-4A30-BFE9-854450BBC816}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='179' name='Covid Vaccination Count' width='192'>
+      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
+      RnP6b9oAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Obesity Rate by Neighborhood' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAZ70lEQVR4nO3d2W9baZrf8e853HdSEql9ly1Zsl12eZHLLru6q3qp6p7BTHIzQYK5SoBc
+      NvIf9EUuA+QmASZAeoJOZ4AMBuiZDLox3T3V01Xd3jdZXiRZ1r6LoihxF5dzTi7sku0qSyWb
+      pOTq83wAA0cifd73JfmjDg/58FEMwzAQwqTUg56AEAdJAiBMTQIgTE0CIExNAvANtzgzQa5k
+      sBldo7DL9bRCjngiBUAxl2QjvbXjddfX1tD2MPZWapNkrvh6E37LSAC+4X7+N/+Na/cmufnL
+      X7H+wu+jM+OsJvPbP2djs3x26wEAidm7XB1d2nGfn/7Tr9g5Hs/Nj9xgeC7+hjN/O1gPegKi
+      PP7mPraWRskXDWJTQ/zN3/0GvK2cb/fgOabyi//zG4ytKIe/9W+YfzzEX43c4PSZY4zf/z2T
+      Nz+lo/8EyYWH1PacY+bWP9A58AG59Aa/+tu/Jhc6jm/tDsk8NB+/RPTRZfJFnSODH/Doxh8o
+      ZJL0f3zioG+CsshfgG84xeKgvz3Iw4llYoszeFqOcOn0ALpukE9G8bSc5kxvEwbQ2nuSc0cb
+      SGZLHDp5gYEmDxueWv71J98iurKC3dfAdz+8gMsb4uPvf0ghmySpufhXnwwyNfIEAi18crGf
+      8eGHuFqPcfFU70Evv2yWH//4xz8+6EmIMijQOzBALp3n9KX32VqeIW/z09XeSG1zOysPf8/t
+      B3Mcff/b1AfchEMBvKEmYjP3sUX6GGxw8NnNES5eukDA66SpoQEFhXBDPRarm94GF5cfRPn+
+      D7+Dr7DG8EKRj3/wEYXFUVZydg71dBF02w/6VnhjirwT/MdLL+W5d+s6mreZ08d6UA56Qm+h
+      ty4Auq6jKAqKIneXqL637jWArusHPQVhIm9dAITYTxIAYWoSAGFqEgBhahIAYWoSAGFqb/1n
+      gfTUCsZWoir7VjxhVHdNVfYtvhne+gAUrv13io/+vir7tr//n3Cc+fdV2bf4ZpBDIGFqb/1f
+      gINS1DQm47Gq7FtBoTccqcq+xespOwDFrTSTM4t0HurFUkpzf2gYf2sfPc21GIbG9OgwSbWW
+      44eaePxgCAJtdEfs3Hs0zcDJk2QTccJ1dZVYS0WlC3n+152bVdm3TbXwn7/3g6rsW7yesgOQ
+      y2RRKJIvGayMjtDUf5palwWArdQqKeoI5ZcYmS7iqOlCj03wIO2jpSXE1NgT/LVv34P/oK0k
+      l0lW6YV/2Bsm5K6tyr6/icoOgL82QjKxDugkkilW7l3HFmjg3Du96MUcvlAjTWqaywsFBrr9
+      WPGiGCFmZmYIBoPMPnnAZrqLYz0taJqGrusvfSBOq+KH43RNo1B4dSVtsViq2rhg7DguwM+H
+      /5bL059VZeS/OPGXfNL3p1XZ9zdR2QHIpjaJrcfJO5PUR8LkXTWsr0TJ5rKoDj9rk+NsFlN0
+      drSxMDeJnk7Se3aAeleJTF4jXahHy2dQVRVVVSmVSlgslu2PQ+uqSrUioFos2O2vLuawadUM
+      gLLjuACqWr1zE5Zd1mxG5b8GyOdw+evQCzlaug8zP79Ab38/ejGP01NLT9sWW2oHzWE/LmMO
+      WlvxWRUy7loaI26s6hz2YEMl1iLKlPr0U7JXr1Vl3+7z5/F956Oq7LscZQcgUNdIoK5x++f2
+      rp5nW04Aahtaty+rb+nY3vZ4PQBEmtvLnYKokNJqlPzIaFX2be/ursp+yyXvAwhTkwAIU5MA
+      CFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIUys7AOmNVe4O
+      3eNps0CD+bFbjC08LefTtQIPbl/h6u1HFAsZ7lz/A7cfTJCKL3H58hXimQILCzs3axOi2soO
+      gM3hJei1UdShkFonns2RetadcCu1iiXYwyF/jvtTS9S1Hyds2WR0boOurkbmxidQnd6yFyHE
+      myq7IMbh9mC3qGDojIyM4A16iG0k0YhgaEUcrhp8ipPUSpGWeieqy059bROLsxME/S5Gh28x
+      H27jzNFuqQl+pppNQrRd1qxre+kO/GZ0Xd/5ttZ0/vqXQ1Ub+z/8yUksO5SZlh2A2OIUj0Yf
+      401a6WxoJp1cppB3EV+P4XWGWLp/kzldpf+dw4w/uIGOjbMXQrgLNeD0sLyWQMGQmuAXHFRN
+      sGqxVG1cVVV3HFfLl/j07mzVxv6Pf3YWu+3Vayu/JDLcxPvfqgfVgsflBKODLl0BQ8NisTJ4
+      /j10xYLTZiV4NggWGw4L2BvbUa0WBn0BVKuj3GkI8UbKDoDN7sT2YrAVC1YLfPHywu5wbl/k
+      cLq2ty1W61d+J8R+k9OgwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtQk
+      AMLUJADC1CQAwtQkAMLUyg6AVszxZPwJBQ22Uutcv3KZxfXM0wsNndnHwzyYWACjxPj9W4zP
+      r1HKJbh9e4hcCdbj6+VOQYg3VnYAUpsblLQ8WyWDdKbAiTNnWJx+DEAutcpGKYAnNc/I9AxG
+      oB1tdYL7Ews0NQWYHBsnmTPKXoQQb6rsgphguIl0KgEo1NSFmHgySVv3IQD0YhZ/TSOtavZZ
+      n+AgVsVHVAswPTVDoKaGpclHpHM9DHQ1Sk3wM6arCa7qbQ3FYgGMKpVE5nMZkqkUpNLEVsax
+      hlpw2SwUCnlUu5f1mWkyxQ1am1tYXppHTybpPjVAsw8SmTxbehOlXAJVbZaa4GdMVxNsVPel
+      qM1mr15NcCaxThEHG/EYkUCAldgyhUKYhqATr7+OtkianKWPjsYQC9MTKOGj+G0KKbufpjof
+      6swE9pqucqchxBspOwA1DW3UNLRt/1zf+vLl9a3P+8O2dPVub/v8fgCaOg6VOwUh3picBhWm
+      JgEQpiYBEKYmARCmJgEQpiYBEKYmARCmtmsAVlZWyGaz+zUXIfbdrgH46U9/ytjY2H7NRYh9
+      t6dDoJ/97GfVnocQB2JPAfjFL37B+vo6k5OT1Z6PEPtq1wA4nU6sViter5eJiQk+/fTT/ZqX
+      EPti1w/D/ehHPwLgJz/5CQCDg4PVn5EQ+2gPh0AGhiFVW+KP0x4CkOMPv/4tY1PzFLSvlqZk
+      kzGGh++zVYL0+iKXP/+chdjTmmBDKzIydJ0bQ2OUijnu3bzC0Og0mc0Vrly9xma2yNLSSqXX
+      JMSe7SEAbk6e7uXaL/8v/+N//m8mV9MvXaqoNrwuCwVNZ24uyolzgyzPTQCQS6+ie9ppd6Z4
+      MLVAoKWfoBZjZHadzo56Zscn0K3SI0wcnD0UxCT59S//wOCf/DuaQwqra2mof97c2uUN4LAu
+      AQa61YHb7uSL6jOjVMDlrSekuBhbLtIUcWPxOsFRz8LcFIGAhycP77AcaedUf6fUBD8jNcGV
+      VUZNsE50YYac4cNeWOJ3V3T+/IdnX7rGxuo8T6am8eXd1Klb3L5zG+xBEpsb2B1BVh4NsaTp
+      9A50Mzk6hK4ZvHu+Dr+epGR1ENvIoBgl6RP8AqkJrqwyaoJ11qNR1tdXmVv08u7ZU1+5htsX
+      5PjJQRSLnaCviUAijTcQRC8VsNnsnHz3OJpix+d24HN6UGxu3BawhVuw2m143V4sDu8rxhai
+      +r4mAAYObyvnTqmkiiU2N1O0hf0vXcPh9uFwP/85VBN6umF52vza7X1+fa8/uL1te/Zs4PEF
+      ypi+EOX5mgBYCDc0YFEteFKbeL2e/ZmVEPvkawKg4vMb/OYfH5DKTmOPFOn88/f2Z2ZC7IM9
+      nAVyY2ODzoEz6JZQ9WckxD7a0/cC5dJx7LkSmrJV7fkIsa/2cP4pz1ZBYeHJE7KF6p0nFuIg
+      7CEAXr7zyYfUNLbx4cVj1Z+REPtoDwFI86t/uobfluS3Vx9Vf0ZC7KNdXwNkE0v8868/Y3Fj
+      A1/KwZZDXgOIPy67BsDla+Cj73/M8dOb2N0+InU1+zUvIfbFrodAqdgsw48micfXSW0uceXm
+      4/2alxD7YtcAqIbG1NwybZ3dKJko8Vx1P7UnxH7b9RDIW9/Nh6ez3Lx2BVeoiR9+cHS/5iXE
+      vviaN8IUmnuO09xznKelkfsyJyH2zWt8EDvD7Zu7f0lWKZ9laWGRbP7ZoZJhkIxHWdtIgaET
+      X1thI5VFL+VZWYlS0iGXy5UxfSHKs4ePQpS49umvWE4WsDp8JLZ6CThflRuDiZGHGJ4gc49G
+      OffuMQq5OI/GZlCKW2wd7mR5MYa2NUVtfYhsJkMmV6BkQG9XS8UXJsRe7CEAaZZiNj7+3hH+
+      /v99zuWr4/zww75XXtPncTC2uEBt49O+YMVcgkjHUVrVaa4spRjo6ceSeMJCxkI8nsCweNCz
+      m0y7vbRH/FIS+YyURFZWmW1SvQSdcX7+j58R7uik9ksFMdsMg7VEnvcuXODu7XtAO6rVQXZt
+      g2gpTY2vllQ6jbGZpaV3gL7WGpZXVthwtJGIzqM2HJOSyGekJLKyymyTWsDlb+XDCwPU1wSw
+      WnaarEJHWz13btygufsY0egKwVAER/EeUTXMO53NjA7fhUAbNU6FeFKjuauX7P0h3I2H33x1
+      QpRhT/UAfb0N/MPf/QRP94f8xfffffXVFIVgfTsX69tf+vXhY2e2t4+eel5MUxupB6D/5MtF
+      9kLspz29Brjy+S3aBi5w7Lg8U4s/LrsefBmGQSZZoGegh5XJhwyNzu7XvITYF7sGYHPpAf/1
+      v/wV84ktVKWOD97r3695CbEvdg1AoKGPv/y3PyCxOMXk7CjDYwv7NS8h9sWurwFUi532vhO0
+      953A0Etksjufuxbim2hPRfEAimrF693z1YX4RpA2qcLUJADC1CQAwtQkAMLUJADC1CQAwtQk
+      AMLUJADC1CQAwtQq+NauQWx+nHvji7T0DNDXXk8pn+ba5StkNReDg0cYun0P3eqnryPI6JM5
+      Dh87TS65Se+hzspNQ4jXUNEALMyvUhcOUxPwAZDPRGk8fJ4mZZrb0zGOnLyIuvmYuYSG1+th
+      fXkZh90gltyixmvfrgc2DON5SWQVv4tF13VKpVeXPmql6n4V/E7jQnVrgndbczXHNXRj59u6
+      quWnT29rVXn146iih0BWu5P6pkYmRh6iASgqWqlIsahhs6poWolSSae54xC9PV0EHAUyup35
+      2SkURdlulfrivy+CUA2q8tXxtv/tWPpZobF3GrfKa97pdlZVFbWa46q7jFvFGmgA1bLL/VzB
+      YWhtq+fJo0e4QhHWoytYXfWklocZWjI42d3I3NgtZpIOIn4bxa0tIh2HMRLLWF2B7TsGXn5w
+      VO8uAZSdH4jVfBDC2xkADmjNilLlAOzyRFfRj3cGIu1cirxcE3z6/Le3t9+7+Hw70tIBwNkL
+      lyo5BSFei5wFEqYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQ
+      piYBEKYmARCmVvEAFLYy5ArP+wRnU5sk0jkwdFKJOKlsHl0rEt/YRNPZtVuiENVW0XoAQy/w
+      8Na/kK8Z5L2BCIWtTYbujaCXSnT39zA7tYhWKtHQGCIe36SuvoNiqUhvd1slpyHEnlUuAIZB
+      bHGWcHs3q+mnvypmN2joPkGLMs3VxQT9fe9gSYyzkFZIpTLYXJsYWwnmfEFa6rzSJ/gZ6RNc
+      WWX2Cd4bw9B5Mv6EvJ4nmktwvD+CYrWTW08S13IEPUGy2SyktmjpOUp/Z4SlxUU2HK3EV2Zp
+      i0if4C9In+DKKrNP8N4oqoXzH/0AChvMxq1sRlcIBiNYskMsKCFO9rfw6N5d8LXS7lLYWM3T
+      2NVLevguroZDlZqGEK+l8i1f7CHaGwCefjXKkROD2xe9c+bC9nZtfSMAR0+dq/gUhNgrOQ0q
+      TE0CIExNAiBMTQIgTE0CIExNAiBMTQIgTE0CIExNAiBMTQIgTE0CIExNAiBMTQIgTE0CIExN
+      AiBMraJtUhcnRphYiGIPNfHeO71ohQzXr1who7k5N3iEoVtD6LYgfR0BHo3P0nf8LNnEOod7
+      pE+wOBgVLYhp6u4nGK5nZjUJwFY6SqTnHE3McHcqSu87F1A3x5mNF6kJBVhbnMfttrOZyRNw
+      27d7BGsv1KZWs0/w7r1rD65PsGEcTJ9go5p9go2D6xOsaRqlHfoEVzQA6fgSCxv682d05emD
+      TOdp42vDMNANg+aObizZNTKbMdayKpmpKU4e7duuA36xTWi126Tu1JK02m1Sd99/dduk7jj2
+      Aa252m1Sd1tzRQ+BZh6PEy0opLbydES8BPz1bDy8xrzu5/yZdu7cuobhDPNej4N4okC4vYfV
+      O3ew1HduT1LX9Zd65Va7Z65lh0Lwajdv3mlcOLg1H9xtXb2/8k/3r+44dgUDoHLshZ7AXxi8
+      +NH29vsfPN+OtHUB8N7FDyo3BSFek5wFEqYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCm
+      JgEQpiYBEKYmARCmVtFPg8bmHzP8eI7GnhP0d4TRi1vcvn6FlO7j/JnD3L11B90Rpr/dx/2x
+      aY6cPEc2vkZXV3slpyHEnlXuL4Chs7qe59JH3yG/uQhALr1CsO0UZzvs3J1coXPgPQ7V6kxG
+      czQ2RliengKrlWy+up8HF2InlT0EUlSUFz/LbhgoqopFVdE0A1VRUC0KTa3t2Cx2/E6dpeVl
+      RsYnKzoNIfaqcgFQFGq8Bp99+s+ongjR6AoWVx3RietcHk9xoivM4+HLjCwViYQ8eO0qtc2t
+      GLkUqLaKTUOI11HB1wAKjd3HaOw+9tJvL3z7e9vbH3z43e3t+vYeAC5+66s1BELsl8o3yXtD
+      uq5v9wk2XqgDNppOoyg7txQth1HbS7FYfOVlFmCwqbUq41pUZcdxAY6EB7Ap1fmr2Opv23nN
+      3V04v/PRKy8rl6W7e+c1Gzofn6neFyPoukax+Op6Z8Uwqlh1/ga+3Cd4PxWLRWy2/T8cM+Oa
+      D2pcTdNQFGW75PWtex/gIB4EX6h2HfBOzLjmg7ytX7y937oAfPmZUCvlWY/FiG8kKtoxXisW
+      0b70x+/lwmmDbCpBbD1OoVS9rwv5YtwX16xrRTbi66Rz+a/9v8VC4WtuF51CYefTzC+uWdcK
+      ZLN5DEMnXyjsutfC11yOoVMo7m3cTGqT9fgGRa26tzPw0hcuwFsYgC+Lx+Z58niW6Nrmjnf0
+      /Pzca+83MTtLbJfjcNAZf/iAxcU5hh6Os7G0TO41jhaXlhZfe05fWJ58xMTcEtNzyztfZ26e
+      IrAwOcWXH4paIcdqLP7spwyTkyt7GjeTXuJ3v71BPr/Fo8fjr7zO6tw8eWBycuorl+laiZXV
+      1ac/lDJMzu5t3NEH91icn+bO/cfs9Yg8Flshk9nt/tubt+ZF8I4MjcTGOrrVRjq+xO1b93DX
+      HyKsrjMTK9LX3cS167dIvLuFqjuxpRZR249QXF9CS22wmszTeriX+NQ46ZLCwLvvMHX3Npsb
+      eU62tu06tNMborG9kccTS8TWYvhtGmu6F21zBZtLYWRkmtr2I7i3FojnHfi8Hg51NbMYTZFL
+      xrCX0twenSbc2oVHteBXMkRttTgKKY709e08rsdDYm6eyLE2Fice8HhuDV+4DRtZTvR1MDw2
+      z9zoI0KxJHV6gquf/w6XvwlfcYXllI3Tp/vYTKXIrE4xG13H5u/hyf3rTC7FOXziEl0N3lcP
+      rNrpqPcxvbwBwPjwdRbWM9R3DlBae0xOcbI+u4B3NYafPL///F+w+luoVWLMxjRODZ4kHt8g
+      G1tgdnUNa6iHJw9uMLWwTs/J9+lu8L9yWG9NPX19fdwdusf6/Dj3niziDEZo8Fip9ag83LQQ
+      sRepdRS4ObmJ3eHEVYiSLgU4drSVsdEpLO4aGmsdRGpd3BvP0REEi9dgbCwKLh/fff/Uq5e8
+      6yPgbWB18e7gBc4PHie7uYHb62dtcQlfTRi3FTRXLf0DAwz0HELLrFLyeckujGFYvGSUIBfP
+      vUNiaQKjroez/S3EojN4Wt7l9NEe1K859M5sRvn8X35PfVsHpWIRbzBEIjpLWnOwNjOFzRfA
+      qhiUrF7eGzxFg0dhfHIaX02EYrHAwvQ0Dm8Qq8WOxcixkjdwphYpqr5dx/XWNPOtb19iZWqM
+      tWSOwQsXsOaSZPMFSsU82aKN/v5+3j3Rj8NTw/kPvk3IqVFTF8Gl5kikNYqlEumSlUsXBwk4
+      rEzNzBEI1YC++7Omv7GT3PIUBa1EYsvGpYunycU3UVwhzp4ZpL+vl1OnTuDwBLn0wUVqnSrB
+      mjAeW4lEukihWCBdtHDpwjmCbjvTU9MEampQ9N3f7deKeQpFjY1YkpPvX8JdymG1K4yt5miw
+      JMkUrVitNk6cvURznZ+OQ32cOXuaUmqdvlPv02DPo6oWHk9tEqnRWd3ScVodnDhzgZZaz47j
+      vvUBcFktjNy/ydUb93EGAhiGQmdnK4qhoSlWfC4nDiPHyPQKTeEQnpp23BYnTZ0ttNQoXBsa
+      p73vNHV6lOHZJB3tR1A2R5lYS+FUd/5yKlBoPTTAD//0E0jH8dbVYbO6CdlVIq3N9Bw5hlUr
+      YHc6CYfrUVAIt7WgaU4ifht14QhdA0exlvI4HE6awiG8oUaCHh/hhppd15xNRLl25Sq++ja6
+      2poZunkTf3MbXXUebtwbJxD0EQw4uD88ijsQxAIEgyF0XUO3eQj4XNQE/NQHnVy7+QiHz83R
+      gQEK+RIu586nlG02N16vkyO9HTicNXQ2+7l6/QFNnS1EwhFUoLbOy/07w3j8QUAlGApgGBqa
+      6iTgcVBXW0tDjYtrtx7icDk5dvQY+UIJh2OXU9m5Da7cuEtrVy8t3e08vnkVV6SV5nAdvmCI
+      cChAqC6M3RvCY4NQMEjI52P04TC+hi7mH90g72ukq60ep9tPa52f2tp6XG4/TodKKBTccej/
+      D6PskznpZg6iAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Obesity in age groups' width='192'>
+      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
+      Qv+S/wctDjjpozDoQAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Rates of Preventable Diseases by Age' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Rates of Preventable Diseases by Neighborhood' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
